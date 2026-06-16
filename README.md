@@ -1,4 +1,4 @@
-# 📸 Instagram Clone
+# 📸 Instagram Clone!
 
 A simple Instagram-inspired web application built with **Node.js**, **Express.js**, **EJS**, and **Multer**. Users can create posts, upload images, view all posts, view individual posts, edit captions, delete posts, and browse posts by username.
 

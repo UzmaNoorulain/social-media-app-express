@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= username %></title>
+</head>
+<body>
+    <h1><%= username %>'s Posts</h1>
+
+<% if (userPosts.length === 0) { %>
+  <p>No posts found for this user.</p>
+<% } %>
+
+<% userPosts.forEach(post => { %>
+  <div class="post">
+    <img src="<%= post.image %>" width="300" alt="Post Image">
+
+    <h3><%= post.username %></h3>
+
+    <p><%= post.caption %></p>
+
+    <hr>
+  </div>
+<% }) %>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= username %></title>
+
+  <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+
+  <div class="profile-header">
+    <h1>@<%= username %></h1>
+    <p><%= userPosts.length %> Posts</p>
+
+    <a href="/posts" class="back-btn">← Back to Home</a>
+  </div>
+
+  <% if (userPosts.length === 0) { %>
+    <p class="no-posts">No posts found for this user.</p>
+  <% } else { %>
+
+    <div class="posts-grid">
+      <% userPosts.forEach(post => { %>
+        <div class="post">
+          <img src="<%= post.image %>" alt="Post Image">
+
+          <div class="post-content">
+            <h3><%= post.username %></h3>
+            <p><%= post.caption %></p>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+
+  <% } %>
+
+</body>
+</html>

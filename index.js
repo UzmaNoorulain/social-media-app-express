@@ -223,6 +223,13 @@ let posts = [
   },
   {
     id: uuidv4(),
+    username: "uzmanoorulain",
+    image:
+      "/uploads/1781623511213-WhatsApp Image 2024-08-25 at 20.51.19_1476ff03.jpg",
+    caption: "forever hijabi girl",
+  },
+  {
+    id: uuidv4(),
     username: "ahmed",
     image: "/uploads/Vi-Con by Hayong Kim.jpeg",
     caption: "New Gadget!",
